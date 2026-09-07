@@ -1,5 +1,5 @@
 # Guia de commits — ConsultingTask's
-o
+o0
 Oito commits semânticos (a entrega exige entre 6 e 10), organizados na ordem lógica de construção do projeto. A divisão abaixo permite distribuir os commits entre os integrantes para que todos tenham uma contribuição identificável no histórico.
 
 > **Regra desta divisão:** cada arquivo é adicionado por inteiro em um único commit. Não use `git add -p` e não divida trechos de um mesmo arquivo entre pessoas. Como os arquivos já estão em sua versão final, alguns commits intermediários representam etapas lógicas e a aplicação só fica completa após o commit 8.
