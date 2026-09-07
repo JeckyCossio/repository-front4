@@ -1,0 +1,105 @@
+.app {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__main {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4) var(--space-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.workspace-intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding: var(--space-5) 0 var(--space-2);
+}
+
+.workspace-intro__eyebrow {
+  margin-bottom: var(--space-3);
+  color: var(--color-steel);
+  font-size: var(--text-micro);
+  font-weight: 650;
+  letter-spacing: 0.08em;
+}
+
+.workspace-intro h1 {
+  max-width: 680px;
+  font-size: clamp(2.25rem, 7vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.workspace-intro__lead {
+  max-width: 580px;
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--text-md);
+}
+
+.workspace-intro__stats {
+  display: flex;
+  align-self: flex-start;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.workspace-intro__stats div {
+  min-width: 112px;
+  padding: var(--space-4);
+}
+
+.workspace-intro__stats div + div {
+  border-left: 1px solid var(--color-border);
+}
+
+.workspace-intro__stats dt {
+  color: var(--color-steel);
+  font-size: var(--text-xs);
+}
+
+.workspace-intro__stats dd {
+  margin-top: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.workspace-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 48px -32px rgba(15, 23, 42, 0.25);
+}
+
+@media (min-width: 720px) {
+  .app__main {
+    padding: var(--space-12) var(--space-8) 6rem;
+    gap: var(--space-10);
+  }
+
+  .workspace-intro {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .workspace-panel {
+    padding: var(--space-6);
+  }
+}
