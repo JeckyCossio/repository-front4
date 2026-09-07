@@ -16,22 +16,12 @@ Projeto desenvolvido para o **Checkpoint 4** da disciplina de Frontend do curso 
 | Felipi Bandeira de Godoy | 573741 |
 | Leonardo Ferreira Barbosa | 571311 |
 
-## Repositório
-
-<!-- Substitua pelo link do repositório no GitHub -->
-https://github.com/USUARIO/REPOSITORIO
-
 ## Funcionalidades
 
-Requisitos do checkpoint:
-
 - Cadastro de tarefas com **nome, prazo, descrição e nível de prioridade** (baixa, média, alta)
-- **Marcar como concluída** e **remover** (com confirmação inline)
+- Botões para **Marcar como concluída** e **remover** tarefas
 - Filtros rápidos: **Todas · Pendentes · Concluídas**
-- **Persistência automática** em localStorage (chave `devtask:tasks`)
-
-Melhorias de produto (além do exigido):
-
+- **Persistência automática** em localStorage
 - **Editar** uma tarefa existente
 - **Busca** por nome ou descrição, sem diferenciar acentos, combinada com os filtros
 - Destaque de prazo: *vence hoje*, *vence amanhã*, *atrasada há N dias*
