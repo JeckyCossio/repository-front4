@@ -39,15 +39,7 @@ git add .gitignore index.html package.json package-lock.json vite.config.js publ
 git commit -m "chore: configura projeto React com Vite"
 ```
 
-Trecho principal — `package.json`:
 
-```json
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-}
-```
 
 ## 2 · `feat: implementa modelo e persistência de tarefas`
 
@@ -70,13 +62,6 @@ git add src/hooks/useLocalStorage.js src/hooks/useTasks.js src/utils/date.js src
 git commit -m "feat: implementa modelo e persistência de tarefas"
 ```
 
-Trecho principal — `src/hooks/useLocalStorage.js`:
-
-```js
-useEffect(() => {
-  window.localStorage.setItem(key, JSON.stringify(value))
-}, [key, value])
-```
 
 ## 3 · `feat: adiciona ícones e indicador de prioridade`
 
@@ -105,11 +90,6 @@ git add src/assets/icons/alert.svg src/assets/icons/calendar.svg src/assets/icon
 git commit -m "feat: adiciona ícones e indicador de prioridade"
 ```
 
-Trecho principal — `src/components/Icon/Icon.jsx`:
-
-```js
-const ICONS = { plus, check, trash, edit, search, close, calendar, alert, inbox }
-```
 
 ## 4 · `feat: cria cabeçalho e formulário de tarefas`
 
@@ -129,16 +109,6 @@ git add src/components/Header/Header.jsx src/components/TaskForm/TaskForm.jsx
 git commit -m "feat: cria cabeçalho e formulário de tarefas"
 ```
 
-Trecho principal — `src/components/TaskForm/TaskForm.jsx`:
-
-```js
-onSubmit({
-  title: values.title.trim(),
-  description: values.description.trim(),
-  dueDate: values.dueDate,
-  priority: values.priority,
-})
-```
 
 ## 5 · `feat: implementa listagem e ações das tarefas`
 
@@ -159,13 +129,6 @@ git add src/components/EmptyState/EmptyState.jsx src/components/TaskItem/TaskIte
 git commit -m "feat: implementa listagem e ações das tarefas"
 ```
 
-Trecho principal — `src/components/TaskList/TaskList.jsx`:
-
-```jsx
-{tasks.map((task) => (
-  <TaskItem key={task.id} task={task} onToggle={onToggle} onEdit={onEdit} onRemove={onRemove} />
-))}
-```
 
 ## 6 · `feat: integra filtros, busca e fluxo principal da aplicação`
 
@@ -184,18 +147,6 @@ Depois de conferir essa lista, execute:
 ```bash
 git add src/components/TaskFilters/TaskFilters.jsx src/App.jsx src/main.jsx
 git commit -m "feat: integra filtros, busca e fluxo principal da aplicação"
-```
-
-Trecho principal — `src/App.jsx`:
-
-```js
-const visibleTasks = tasks
-  .filter((task) => {
-    if (filter === 'pending') return !task.completed
-    if (filter === 'completed') return task.completed
-    return true
-  })
-  .filter((task) => taskMatchesSearch(task, search))
 ```
 
 ## 7 · `docs: documenta projeto e roteiro de apresentação`
@@ -248,16 +199,6 @@ git add public/fonts/Montserrat-Variable.woff2 public/fonts/OFL.txt src/styles/t
 git commit -m "style: finaliza identidade visual e responsividade"
 ```
 
-Trecho principal — `src/styles/global.css`:
-
-```css
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat-Variable.woff2') format('woff2');
-  font-weight: 100 900;
-  font-display: swap;
-}
-```
 
 ---
 
