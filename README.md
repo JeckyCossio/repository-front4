@@ -4,7 +4,7 @@ Gerenciador de tarefas para desenvolvedores, feito em **React + Vite + JavaScrip
 
 Projeto desenvolvido para o **Checkpoint 4** da disciplina de Frontend do curso de Engenharia de Software da **FIAP**.
 
-![ConsultingTask's no desktop](docs/screenshot-desktop.png)
+![Imagem mostrando como é o layout do projeto](./src/assets/layout_demonstracao.png)
 
 ## Integrantes
 
@@ -97,4 +97,4 @@ Os trechos abaixo estão comentados no código.
 
 ## Apresentação
 
-O roteiro do vídeo está em [`docs/ROTEIRO-VIDEO.md`](docs/ROTEIRO-VIDEO.md).
+Aqui está o link do post no linkedin onde há um video mostrando as funcionalidades do projeto, seu uso e como ele foi construído.
