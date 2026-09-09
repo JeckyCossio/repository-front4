@@ -4,6 +4,8 @@ Gerenciador de tarefas para desenvolvedores, feito em **React + Vite + JavaScrip
 
 Projeto desenvolvido para o **Checkpoint 4** da disciplina de Frontend do curso de Engenharia de Software da **FIAP**.
 
+Link do site no vercel: https://consultingtasks.vercel.app/
+
 ![Imagem mostrando como é o layout do projeto](./src/assets/layout_demonstracao.png)
 
 ## Integrantes
@@ -98,3 +100,4 @@ Os trechos abaixo estão comentados no código.
 ## Apresentação
 
 Aqui está o link do post no linkedin onde há um video mostrando as funcionalidades do projeto, seu uso e como ele foi construído.
+Link: https://lnkd.in/p/dqi7XCc2
